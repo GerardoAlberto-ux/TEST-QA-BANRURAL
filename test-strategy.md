@@ -1,10 +1,10 @@
-# 🎯 Estrategia de Pruebas y Plan de Ataque - QA Banrural
+Estrategia de Pruebas y Plan de Ataque - QA Banrural
 
 Este documento describe el enfoque estratégico utilizado para auditar, detectar errores e implementar mejoras de calidad en el aplicativo **Juego Adivina tu Número**.
 
 ---
 
-## 1. Alcance de las Pruebas (Scope)
+# 1. Alcance de las Pruebas (Scope)
 El análisis se enfocó en garantizar la correcta implementación de las reglas de negocio, la integridad de los datos de entrada y la consistencia de la experiencia del usuario (UX) mediante pruebas estáticas del código fuente y dinámicas en el navegador.
 
 ### Reglas de Negocio Validadas:
@@ -14,7 +14,7 @@ El análisis se enfocó en garantizar la correcta implementación de las reglas 
 
 ---
 
-## 2. Tipos de Pruebas Ejecutadas
+# 2. Tipos de Pruebas Ejecutadas
 
 ### A. Pruebas Funcionales (Caja Negra)
 * **Flujo Feliz:** Verificación del comportamiento del sistema cuando el usuario adivina el número secreto.
@@ -27,7 +27,7 @@ El análisis se enfocó en garantizar la correcta implementación de las reglas 
 
 ---
 
-## 3. Matriz de Defectos Corregidos (Bug Log)
+# 3. Matriz de Defectos Corregidos (Bug Log)
 
 | ID | Componente | Descripción del Defecto | Severidad | Prioridad | Resolución / Acción Correctiva |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -37,14 +37,14 @@ El análisis se enfocó en garantizar la correcta implementación de las reglas 
 
 ---
 
-## 4. Casos de Prueba Clave Automatizables / Manuales
+# 4. Casos de Prueba Clave Automatizables / Manuales
 
 ### TC-001: Validación de Datos Inválidos
 * **Entrada:** Input vacío (`""`) o cadena de texto (`"BanruralQA"`).
 * **Acción:** Presionar el botón de envío.
 * **Resultado Esperado:** Despliegue de alerta nativa sin agregar datos a la lista de "Números anteriores" y manteniendo el contador de intentos intacto.
 
-### TC-002: Ciclo de Vida de Reinicio
+# TC-002: Ciclo de Vida de Reinicio
 * **Entrada:** Hacer clic en "Comienza un nuevo juego" tras haber ganado o perdido.
 * **Acción:** Ejecutar una jugada errónea en la segunda ronda.
 * **Resultado Esperado:** El texto "¡Incorrecto!" debe ser 100% legible, los campos de historial vacíos y los botones completamente habilitados.
